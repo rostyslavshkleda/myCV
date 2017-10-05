@@ -1,11 +1,7 @@
-[
-  {
-    "city": "Ivano-Frankivsk"
-  },
-  {
-    "street": "Pasichna street"
-  },
-  {
-    "building": "2/8"
-  },
-]
+{ "address":
+        {
+          "city": "Ivano-Frankivsk",
+          "street": "Pasichna street",
+          "building": "2/8"
+          }
+}
