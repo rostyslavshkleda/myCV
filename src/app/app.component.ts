@@ -1,21 +1,10 @@
-import { Component } from '@angular/core';
-
+import {Component, OnInit} from '@angular/core';
+import { FeatureService } from './feature/feature.service';
 
 export class Feature {
   id: number;
   name: string;
 }
-
-const FEATURES: Feature[] = [
-  { id: 1, name: 'Address of living, phone number and e-mail' },
-  { id: 2, name: 'Date and place of birth' },
-  { id: 3, name: 'Jobs experience' },
-  { id: 4, name: 'Education' },
-  { id: 5, name: 'Professional skills and knowledge' },
-  { id: 6, name: 'Languages knowledge' },
-  { id: 7, name: 'Personal qualities' },
-  { id: 8, name: 'Others' },
-];
 
 @Component({
   selector: 'app-root',
@@ -26,20 +15,33 @@ const FEATURES: Feature[] = [
     <li *ngFor="let feature of features"
       [class.selected]="feature === selectedFeature"
       (click)="onSelect(feature)">
-      <span class="badge">{{feature.id}}</span> {{feature.name}}
+      <button class="btn"><h1><span class="badge">{{feature.id}}</span> <a routerLink='/{{feature.name}}'>{{feature.name | uppercase}}</a></h1></button>
     </li>
   </ul>
-  <div *ngIf="selectedFeature">
-    <h2>{{selectedFeature.name}}</h2>
-  </div>
-  `
+  <feature-detail [feature]="selectedFeature"></feature-detail>
+  
+  
+  `,
+  providers: [FeatureService]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Shkleda Rostyslav Anatoliiovych';
-  features = FEATURES;
-  selectedFeature: Feature;
- 
+  features: Feature[];
+    selectedFeature: Feature;
+
+  constructor(private featureService: FeatureService) { }
+
+  getFeatures(): void {
+    this.featureService.getFeatures().then(features => this.features = features);
+  }
+
+  ngOnInit(): void {
+    this.getFeatures();
+  }
+
+
   onSelect(feature: Feature): void {
     this.selectedFeature = feature;
   }
+
 }
