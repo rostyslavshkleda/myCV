@@ -3,8 +3,7 @@ import { Feature } from './feature';
 @Component({
   selector: 'feature-detail',
   template: `<div *ngIf="feature">
-    <h2>{{feature.name}}</h2>
-    
+    <h2>{{feature.name | uppercase}}</h2>
      </div>
      <router-outlet></router-outlet>
      `

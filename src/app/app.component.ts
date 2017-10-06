@@ -10,15 +10,21 @@ export class Feature {
   selector: 'app-root',
   template: `
   <img width="300" src="../assets/Ros.jpg">
-  <h1>{{title}}</h1>
-  <ul>
-    <li *ngFor="let feature of features"
-      [class.selected]="feature === selectedFeature"
-      (click)="onSelect(feature)">
-      <button class="btn"><h1><span class="badge">{{feature.id}}</span> <a routerLink='/{{feature.name}}'>{{feature.name | uppercase}}</a></h1></button>
-    </li>
-  </ul>
-  <feature-detail [feature]="selectedFeature"></feature-detail>
+  <h1><strong>{{title}}</strong></h1>
+  <div clas="row">
+    <div class ="col-sm-4">
+      <ul>
+          <li *ngFor="let feature of features"
+            [class.selected]="feature === selectedFeature"
+            (click)="onSelect(feature)">
+            <button class="btn btn-info btn-block"><h4><span class="badge">{{feature.id}}</span> <a routerLink='/{{feature.name}}'>{{feature.name | uppercase}}</a></h4></button>
+         </li>
+        </ul>
+      </div>
+    <div class ="col-sm-8 lavender rad">
+      <feature-detail [feature]="selectedFeature"></feature-detail>
+    </div>
+  </div>
   
   
   `,

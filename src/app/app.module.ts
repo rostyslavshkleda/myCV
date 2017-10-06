@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+
 import { FeatureDetailComponent } from './feature/feature-detail.component';
 import { AppComponent } from './app.component';
 import { AddressComponent } from './address/address.component';
@@ -28,6 +30,7 @@ import { OthersComponent } from './others/others.component';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     RouterModule.forRoot([
       {
         path: 'address',
