@@ -18,6 +18,6 @@ export class AddressComponent implements OnInit {
 
   ngOnInit(){
 
-    this.httpService.getData().subscribe((data: Response) => this.general= data.json());
+    this.httpService.getData().subscribe((data: Response) => this.general=data.json());
   }
 }

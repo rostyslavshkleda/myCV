@@ -6,14 +6,21 @@ html, body {
     margin: 50px;
     padding: 0;
 }
+.header {
+  text-align:center;
+}
+.header img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow:0 0 1em blue inset;
+}
 ul {
   list-style-type: none;
 }
 .lavender {
   background-color:lavender;
-}
-.tran {
-    transition: width 2s;
+  box-shadow:0 0 1em blue inset;
 }
 .rad {
   border-top-right-radius: 50%;

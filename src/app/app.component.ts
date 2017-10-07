@@ -9,8 +9,10 @@ export class Feature {
 @Component({
   selector: 'app-root',
   template: `
+  <div class="header">
   <img width="300" src="../assets/Ros.jpg">
   <h1><strong>{{title}}</strong></h1>
+  </div>
   <div clas="row">
     <div class ="col-sm-4">
       <ul>
@@ -51,3 +53,4 @@ export class AppComponent implements OnInit {
   }
 
 }
+

@@ -1,14 +1,14 @@
-{
-  "general": {
+
+  {
     "city": "Ivano-Frankivsk",
     "street": "Pasichna street",
     "building": "2/8",
-    "e-mail": "scatrosjob@ukr.net",
+    "email": "scatrosjob@ukr.net",
     "day": "July 11 1981",
     "region": "Lviv region, town of Stryi",
     "speciality": "External economic activities management",
     "qualification": "manager-economist",
-    "institue": "Ternopil Academy of National Economy",
+    "institute": "Ternopil Academy of National Economy",
     "eighthjob": "Manevr Co.Ltd, bookkeeper",
     "seventhjob": "State producing holding company 'Karpaty', quality control manager of the third grade",
     "sixthjob": "Bayadera Logistik Co.Ltd, sales agent",
@@ -31,7 +31,7 @@
     "knowledge": "Knowledge of specialized accounting and banking software B2, SR Bank, SAP, Debet+",
     "experience": "Administrative work and managing negotiations experience"
   }
-}
+
 
 
 
