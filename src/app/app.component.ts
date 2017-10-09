@@ -25,7 +25,7 @@ export class Feature {
       </div>
     <div class ="col-sm-8 lavender rad">
       <feature-detail [feature]="selectedFeature"></feature-detail>
-    </div>
+     </div>
   </div>
   
   

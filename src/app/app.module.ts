@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FeatureDetailComponent } from './feature/feature-detail.component';
 import { AppComponent } from './app.component';
@@ -30,7 +32,9 @@ import { OthersComponent } from './others/others.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path: 'address',

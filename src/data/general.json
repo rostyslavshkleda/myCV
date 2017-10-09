@@ -1,5 +1,5 @@
-
-  {
+{
+  "general":{
     "city": "Ivano-Frankivsk",
     "street": "Pasichna street",
     "building": "2/8",
@@ -31,7 +31,7 @@
     "knowledge": "Knowledge of specialized accounting and banking software B2, SR Bank, SAP, Debet+",
     "experience": "Administrative work and managing negotiations experience"
   }
-
+}
 
 
 
