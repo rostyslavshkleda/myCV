@@ -1,12 +1,12 @@
-import {Injectable} from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Injectable()
 export class HttpService{
 
-  constructor(private http: HttpClient){ }
+  constructor(private http: Http){ }
 
   getData(){
-    return this.http.get('src/data/general.json');
+    return this.http.get('https://rostyslavshkleda.github.io/general.json');
   }
 }
