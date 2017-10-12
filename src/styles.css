@@ -5,15 +5,19 @@
 html, body {
     margin: 50px;
     padding: 0;
+  background-color: lightgreen;
+
 }
 .header {
-  text-align:center;
+  text-align: center;
+  background-color: lightblue;
+  box-shadow:0 0 1em red inset;
 }
 .header img {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  box-shadow:0 0 1em blue inset;
+  box-shadow:0 0 1em green inset;
 }
 ul {
   list-style-type: none;

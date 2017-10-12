@@ -10,7 +10,7 @@ export class Feature {
   selector: 'app-root',
   template: `
   <div class="header">
-  <img width="300" src="../assets/Ros.png">
+  <img width="300" src="https://rostyslavshkleda.github.io/Ros.png">
   <h1><strong>{{title}}</strong></h1>
   </div>
   <div clas="row">
